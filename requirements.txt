@@ -1,0 +1,6 @@
+fastapi==0.115.12
+uvicorn[standard]==0.34.1
+pydantic==2.11.3
+pydantic-settings==2.8.1
+sqlalchemy==2.0.40
+dependency-injector==4.46.0

@@ -1,0 +1,10 @@
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = 'black'
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
