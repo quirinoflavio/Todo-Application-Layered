@@ -82,7 +82,7 @@ class TodoListRepository:
         Updates a todo list by its ID.
 
         Args:
-            todo_list (SurgicalActUpdateDto): The data to update the todo list with.
+            todo_list (TodoListModel): The data to update the todo list with.
             db_session (AsyncSession): The database session to use.
 
         Returns:
@@ -114,7 +114,7 @@ class TodoListRepository:
             db_session (AsyncSession): The database session to use.
 
         Returns:
-            List[ProcedureModel]: A list of all todo lists .
+            List[TodoListModel]: A list of all todo lists .
         """
         stmt = select(TodoListModel)
         result = await db_session.execute(stmt)
