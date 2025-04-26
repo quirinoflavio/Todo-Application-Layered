@@ -3,7 +3,7 @@ from uuid import uuid4
 
 from pydantic import Field
 
-from domain.tasks.task import Task
+from src.domain.tasks.task import Task
 from src.core.entities.aggregate_root import AggregateRoot
 
 
