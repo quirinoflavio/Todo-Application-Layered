@@ -3,14 +3,14 @@ from typing import Dict, Type
 from fastapi import HTTPException, Request
 from fastapi.responses import JSONResponse
 
-from core.exceptions.business_error_enum import BusinessErrorEnum
-from core.exceptions.business_exception import BusinessException
 from src.application.contracts.exceptions.http_400.already_exists import (
     AlreadyExistsException,
 )
 from src.application.contracts.exceptions.http_400.not_found import (
     NotFoundException,
 )
+from src.core.exceptions.business_error_enum import BusinessErrorEnum
+from src.core.exceptions.business_exception import BusinessException
 
 
 class BusinessExceptionHandler:

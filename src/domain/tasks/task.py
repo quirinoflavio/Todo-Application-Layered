@@ -1,7 +1,7 @@
 from datetime import datetime
 from uuid import UUID
 
-from core.entities.entity import Entity
+from src.core.entities.entity import Entity
 
 
 class Task(Entity):
@@ -12,4 +12,3 @@ class Task(Entity):
     is_completed: bool
     due_date: datetime | None
     created_at: datetime
-    

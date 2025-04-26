@@ -1,4 +1,4 @@
-from core.entities.aggregate_root import AggregateRoot
+from src.core.entities.aggregate_root import AggregateRoot
 
 
 class User(AggregateRoot):

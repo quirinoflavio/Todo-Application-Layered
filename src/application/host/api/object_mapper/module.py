@@ -1,8 +1,8 @@
 from dependency_injector.containers import DeclarativeContainer
 from fastapi import FastAPI
 
-from application.contracts.tasks.mapping.task_mapping import TaskMapping
-from application.contracts.todo_lists.mapping.todo_list_mapping import (
+from src.application.contracts.tasks.mapping.task_mapping import TaskMapping
+from src.application.contracts.todo_lists.mapping.todo_list_mapping import (
     TodoListMapping,
 )
 

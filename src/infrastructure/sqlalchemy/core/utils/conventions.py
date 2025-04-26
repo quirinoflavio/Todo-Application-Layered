@@ -7,7 +7,3 @@ class NamingConvention:
         class_name = re.sub(r"(Model)$", "", class_name)
         snake_case_name = re.sub(r"(?<!^)(?=[A-Z])", "_", class_name).lower()
         return snake_case_name
-
-
-# Example usage:
-# print(NamingConvention.camel_to_snake("TodoListModel"))  # Output: todo_list

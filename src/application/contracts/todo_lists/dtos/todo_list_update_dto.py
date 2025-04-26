@@ -1,4 +1,4 @@
-from core.dtos.entity_dto import EntityDto
+from src.core.dtos.entity_dto import EntityDto
 
 
 class TodoListUpdateDto(EntityDto):

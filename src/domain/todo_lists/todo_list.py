@@ -1,9 +1,10 @@
-from pydantic import Field
-from core.entities.aggregate_root import AggregateRoot
 from datetime import datetime, timezone
 from uuid import uuid4
 
-from domain.tasks.task import Task
+from pydantic import Field
+
+from src.domain.tasks.task import Task
+from src.core.entities.aggregate_root import AggregateRoot
 
 
 class TodoList(AggregateRoot):

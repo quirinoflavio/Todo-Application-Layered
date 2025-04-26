@@ -1,7 +1,7 @@
 from dependency_injector.containers import DeclarativeContainer
 from fastapi import FastAPI
 
-from application.services.todo_lists.todo_list_appservice import (
+from src.application.services.todo_lists.todo_list_appservice import (
     TodoListAppService,
 )
 

@@ -2,8 +2,8 @@ from uuid import UUID
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from domain.todo_lists.todo_list import TodoList
-from infrastructure.sqlalchemy.repositories.todo_lists.todo_list_repository import (
+from src.domain.todo_lists.todo_list import TodoList
+from src.infrastructure.sqlalchemy.repositories.todo_lists.todo_list_repository import (
     TodoListRepository,
 )
 
