@@ -1,7 +1,7 @@
 from dependency_injector import containers, providers
 
-from infrastructure.sqlalchemy.core.database import DatabaseProvider
-from infrastructure.sqlalchemy.repositories.todo_lists.todo_list_repository import (
+from src.infrastructure.sqlalchemy.core.database import DatabaseProvider
+from src.infrastructure.sqlalchemy.repositories.todo_lists.todo_list_repository import (
     TodoListRepository,
 )
 

@@ -2,16 +2,16 @@ from dependency_injector.wiring import Provide, inject
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from application.contracts.todo_lists.dtos.todo_list_create_dto import (
+from src.application.contracts.todo_lists.dtos.todo_list_create_dto import (
     TodoListCreateDto,
 )
-from application.contracts.todo_lists.dtos.todo_list_dto import TodoListDto
-from application.host.containers.container import AppContainer
-from core.mapper.object_mapper import ObjectMapper
-from domain.todo_lists.todo_list import TodoList
-from domain.todo_lists.todo_list_manager import TodoListManager
-from infrastructure.sqlalchemy.core.database import DatabaseProvider
-from infrastructure.sqlalchemy.repositories.todo_lists.todo_list_repository import (
+from src.application.contracts.todo_lists.dtos.todo_list_dto import TodoListDto
+from src.application.host.containers.container import AppContainer
+from src.core.mapper.object_mapper import ObjectMapper
+from src.domain.todo_lists.todo_list import TodoList
+from src.domain.todo_lists.todo_list_manager import TodoListManager
+from src.infrastructure.sqlalchemy.core.database import DatabaseProvider
+from src.infrastructure.sqlalchemy.repositories.todo_lists.todo_list_repository import (
     TodoListRepository,
 )
 
