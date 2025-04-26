@@ -4,9 +4,7 @@ from typing import TYPE_CHECKING
 
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from infrastructure.sqlalchemy.core.entities.audited_entity_model import (
-    AuditedEntityModel,
-)
+from ...core.entities.audited_entity_model import AuditedEntityModel
 
 if TYPE_CHECKING:
     from ..todo_lists.todo_list_model import TodoListModel

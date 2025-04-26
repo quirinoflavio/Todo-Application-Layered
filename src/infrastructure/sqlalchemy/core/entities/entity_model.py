@@ -2,8 +2,8 @@ from uuid import UUID, uuid4
 
 from sqlalchemy.orm import Mapped, mapped_column
 
-from ...core.entities.base import Base
-from ...core.utils.conventions import NamingConvention
+from ..utils.conventions import NamingConvention
+from .base import Base
 
 
 class EntityModel(Base):

@@ -5,7 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from sqlalchemy.orm import selectinload
 
-from infrastructure.sqlalchemy.models.todo_lists.todo_list_model import (
+from src.infrastructure.sqlalchemy.models.todo_lists.todo_list_model import (
     TodoListModel,
 )
 
