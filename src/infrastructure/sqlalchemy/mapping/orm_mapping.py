@@ -1,13 +1,13 @@
 from sqlalchemy.orm import registry
 
-from domain.tasks.task import Task
-from domain.todo_lists.todo_list import TodoList
-from domain.users.user import User
-from infrastructure.sqlalchemy.models.tasks.task_model import TaskModel
-from infrastructure.sqlalchemy.models.todo_lists.todo_list_model import (
+from src.domain.tasks.task import Task
+from src.domain.todo_lists.todo_list import TodoList
+from src.domain.users.user import User
+from src.infrastructure.sqlalchemy.models.tasks.task_model import TaskModel
+from src.infrastructure.sqlalchemy.models.todo_lists.todo_list_model import (
     TodoListModel,
 )
-from infrastructure.sqlalchemy.models.users.user_model import UserModel
+from src.infrastructure.sqlalchemy.models.users.user_model import UserModel
 
 
 class OrmMappingModule:
